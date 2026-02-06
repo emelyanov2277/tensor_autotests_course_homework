@@ -44,20 +44,51 @@
 # nums = [1, 2, 3, 4, 5]
 # print(nums.reverse())
 
+
 # Задания на кортежи (tuples) в Python
 # Создание вложенного кортежа:
 # Создайте кортеж coordinates = ((1, 2), (3, 4), (5, 6)). Выведите второй вложенный кортеж (ожидаемый вывод: (3, 4)).
+# coordinates = ((1, 2), (3, 4), (5, 6))
+# print(coordinates[1])
+
 # Доступ с отрицательным индексом:
 # У вас есть кортеж days = ("Monday", "Tuesday", "Wednesday", "Thursday"). Выведите последний элемент с помощью отрицательного индекса (ожидаемый вывод: "Thursday").
+# days = ("Monday", "Tuesday", "Wednesday", "Thursday")
+# print(days[-1])
+
 # Срез кортежа:
 # Из кортежа numbers = (10, 20, 30, 40, 50) выведите срез с третьего по пятый элемент (ожидаемый вывод: (30, 40, 50)).
+# numbers = (10, 20, 30, 40, 50)
+# print(numbers[2:5])
+
 # Распаковка с остатком:
 # У вас есть кортеж person = ("Alice", 25, "Engineer", "New York"). Распакуйте его в name, age и остаток в переменную details. Выведите details (ожидаемый вывод: ('Engineer', 'New York')).
+# person = ("Alice", 25, "Engineer", "New York")
+# name, age, *details = person
+# print(details)
+
+
 # Конкатенация и повторение:
 # Создайте кортеж tuple1 = (1, 2). Объедините его с самим собой (повторите два раза) и выведите (ожидаемый вывод: (1, 2, 1, 2)).
+# tuple1 = (1, 2)
+# tuple1 = tuple1*2
+# print(tuple1)
+
 # Подсчет элементов:
 # У вас есть кортеж fruits = ("apple", "banana", "apple", "cherry"). Подсчитайте, сколько раз встречается "apple" с помощью метода count(), и выведите результат (ожидаемый вывод: 2).
+# fruits = ("apple", "banana", "apple", "cherry")
+# print(fruits.count('apple'))
+
 # Преобразование кортежа в список:
 # Возьмите кортеж tpl = (10, 20, 30). Преобразуйте его в список с помощью list(), добавьте 40 и выведите обновленный список (ожидаемый вывод: [10, 20, 30, 40]).
+# tpl = (10, 20, 30)
+# list(tpl).append(40)
+# print(tpl)
+
 # Проверка на наличие нескольких элементов:
-# У вас есть кортеж items = ("apple", "banana", "cherry"). Проверьте, есть ли в нем "banana" и "orange" (используйте in и and/or), выведите True, если только "banana" есть (ожидаемый вывод: True для "banana" in и False для "orange" in, но комбинируйте).
+# У вас есть кортеж items = ("apple", "banana", "cherry"). Проверьте, есть ли в нем "banana" и "orange" (используйте in и and/or), выведите True, если только "banana" есть (ожидаемый вывод: True для "banana" in и False для "orange" in, но комбинируйте).items = ("apple", "banana", "cherry").
+# items = ("apple", "banana", "cherry")
+# if 'banana' in items :
+#     print(True)
+# else :
+#     print(False)

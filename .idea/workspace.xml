@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c5a3ef7-42f4-4f95-9d2c-6c0d8f1b30fc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_3/third_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_3/task1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_3/third_script_my.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_3/33_my.py" afterDir="false" />
-    </list>
+    <list default="true" id="2c5a3ef7-42f4-4f95-9d2c-6c0d8f1b30fc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +34,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.3_my.executor": "Run",
+    "Python.task1.executor": "Run",
     "Python.task2.executor": "Run",
     "Python.task3.executor": "Run",
     "Python.third_script.executor": "Run",

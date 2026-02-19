@@ -17,7 +17,7 @@ def global_changes():
     string = 'Hello, dear friend'
     return number, string
     # Здесь нужно написать код
-print(global_changes())
+global_changes()
 
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

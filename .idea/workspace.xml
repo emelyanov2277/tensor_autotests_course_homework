@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c5a3ef7-42f4-4f95-9d2c-6c0d8f1b30fc" name="Changes" comment="" />
+    <list default="true" id="2c5a3ef7-42f4-4f95-9d2c-6c0d8f1b30fc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +52,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/PycharmProjects/tensor_autotests_course&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\PycharmProjects\tensor_autotests_course\home_work_6" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

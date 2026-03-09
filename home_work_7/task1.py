@@ -50,9 +50,9 @@
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
 class Segment:
-    def __init__(self, point1: tuple, point2: tuple):
-        self.x1, self.y1 = point1
-        self.x2, self.y2 = point2
+    def __init__(self, point1, point2):
+        self.x1, self.y1 = tuple(point1)
+        self.x2, self.y2 = tuple(point2)
 
     def length(self):
         return round(((self.x2 - self.x1) ** 2 + (self.y2 - self.y1) ** 2) ** 0.5, 2)

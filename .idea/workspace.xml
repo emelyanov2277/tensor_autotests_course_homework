@@ -48,6 +48,7 @@
     "Python.third_script_my.executor": "Run",
     "Python.trash.executor": "Run",
     "Python.trash2.executor": "Run",
+    "Python.tt3.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "test__branch",

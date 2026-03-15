@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c5a3ef7-42f4-4f95-9d2c-6c0d8f1b30fc" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/tensor_autotests_course.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tensor_autotests_course.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_7/task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_7/task2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_7/tt3.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_7/tt3.py" afterDir="false" />
+>>>>>>> dc6e4ead5e35e7ea4fcb6b6a46da61c979152532
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +55,21 @@
     "Python.third_script.executor": "Run",
     "Python.third_script_my.executor": "Run",
     "Python.trash.executor": "Run",
+<<<<<<< HEAD
+=======
+    "Python.trash2.executor": "Run",
+>>>>>>> dc6e4ead5e35e7ea4fcb6b6a46da61c979152532
     "Python.tt3.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "test__branch",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Python311x64",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+=======
+    "last_opened_file_path": "C:/Users/admin/PycharmProjects/tensor_autotests_course",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+>>>>>>> dc6e4ead5e35e7ea4fcb6b6a46da61c979152532
   }
 }]]></component>
   <component name="RecentsManager">

@@ -23,15 +23,19 @@
 
 # Здесь пишем код
 class PersonInfo:
-    def __init__(self, fullname: str, age:int, *group:str):
+    def __init__(self, fullname: str, age: int, *group: str):
         self.fullname = fullname
         self.age = age
         self.group = list(group)
+
     def short_name(self):
         name_part = []
         for i in self.fullname.split():
             name_part.append(i)
-        print(f'{name_part[0]} {name_part[1][:1]}.')
+        if len(name_part) < 2:
+            return name_part[0] if name_part else ""
+        return f"{name_part[-1]} {name_part[0][0]}."
+
     def path_deps(self):
         result = ""
         for i in range(len(self.group)):
@@ -39,47 +43,57 @@ class PersonInfo:
             result = result + group_name
             if i < len(self.group) - 1:
                 result = result + " --> "
-        print(result)
+        return result
 
-first_person = PersonInfo('Александр Шленский', 32, 'Разработка', 'УК', 'Автотесты')
-first_person.short_name()
-first_person.path_deps()
+    def new_salary(self):
+        count = {}
+        for i in self.group:
+            for c in i:
+                if c.isalpha():
+                    count[c] = count.get(c, 0) + 1
+        def key_func(x):
+            return -x[1], x[0]
+        top3 = sorted(count.items(), key=key_func)[:3]
+        result = sum(i for _, i in top3)
+        resultt = 1337 * self.age * result
+        return resultt
+
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
 
-# first_person = PersonInfo('Александр Шленский', 32, 'Разработка', 'УК', 'Автотесты')
-# fourth_person = PersonInfo('Иван Иванов', 26, 'Разработка')
-# second_person = PersonInfo('Пётр Валерьев', 47, 'Разработка', 'УК')
-# third_person = PersonInfo('Макар Артуров', 51, 'Разработка', 'УК', 'Нефункциональное тестирование', 'Автотестирование')
-#
-# data = [first_person.short_name,
-#         second_person.short_name,
-#         third_person.short_name,
-#         fourth_person.short_name,
-#
-#         first_person.path_deps,
-#         second_person.path_deps,
-#         third_person.path_deps,
-#         fourth_person.path_deps,
-#
-#         first_person.new_salary,
-#         second_person.new_salary,
-#         third_person.new_salary,
-#         fourth_person.new_salary
-#         ]
-#
-#
-# test_data = ['Шленский А.', 'Валерьев П.', 'Артуров М.', 'Иванов И.',
-#
-#              'Разработка --> УК --> Автотесты',
-#              'Разработка --> УК',
-#              'Разработка --> УК --> Нефункциональное тестирование --> Автотестирование',
-#              'Разработка',
-#              385056, 314195, 1227366, 173810]
-#
-# for i, d in enumerate(data):
-#     assert_error = f'Не прошла проверка для метода {d.__qualname__} экземпляра с атрибутами {d.__self__.__dict__}'
-#     assert d() == test_data[i], assert_error
-#     print(f'Набор для метода {d.__qualname__} экземпляра класса с атрибутами {d.__self__.__dict__} прошёл проверку')
-# print('Всё ок')
+first_person = PersonInfo('Александр Шленский', 32, 'Разработка', 'УК', 'Автотесты')
+fourth_person = PersonInfo('Иван Иванов', 26, 'Разработка')
+second_person = PersonInfo('Пётр Валерьев', 47, 'Разработка', 'УК')
+third_person = PersonInfo('Макар Артуров', 51, 'Разработка', 'УК', 'Нефункциональное тестирование', 'Автотестирование')
+
+data = [first_person.short_name,
+        second_person.short_name,
+        third_person.short_name,
+        fourth_person.short_name,
+
+        first_person.path_deps,
+        second_person.path_deps,
+        third_person.path_deps,
+        fourth_person.path_deps,
+
+        first_person.new_salary,
+        second_person.new_salary,
+        third_person.new_salary,
+        fourth_person.new_salary
+        ]
+
+
+test_data = ['Шленский А.', 'Валерьев П.', 'Артуров М.', 'Иванов И.',
+
+             'Разработка --> УК --> Автотесты',
+             'Разработка --> УК',
+             'Разработка --> УК --> Нефункциональное тестирование --> Автотестирование',
+             'Разработка',
+             385056, 314195, 1227366, 173810]
+
+for i, d in enumerate(data):
+    assert_error = f'Не прошла проверка для метода {d.__qualname__} экземпляра с атрибутами {d.__self__.__dict__}'
+    assert d() == test_data[i], assert_error
+    print(f'Набор для метода {d.__qualname__} экземпляра класса с атрибутами {d.__self__.__dict__} прошёл проверку')
+print('Всё ок')

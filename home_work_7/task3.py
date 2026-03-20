@@ -32,11 +32,31 @@ class PublicTransport:
         self.color = color
         self.max_speed = max_speed
 
-    @property
+
     def info(self):
         print(self.brand, self.color, self.year, self._engine_power)
+
+class Bus(PublicTransport):
+    def __init__(self, brand: str, engine_power: int, year: int, color: str, max_speed: int,
+                 passengers: int, park: int, fare: float):
+        super().__init__(brand, engine_power, year, color, max_speed)
+        self.passengers = passengers
+        self.__park = park
+        self._fare = fare
+
+    def park(self):
+        return self.__park
+    def set_park(self, value: int):
+        if 1000 <= value <= 9999:
+            self.__park = value
+
 v1 = PublicTransport('Автомобиль', 500, 2040, 'Фиолетовый', 300)
-v1.info
+v1.info()
+v2 = Bus('Автобус', 300, 1994, 'Красный', 500, 300, 2000, 45)
+v2.info()
+v2.set_park(1)
+print(v2.park())
+
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 # transport = PublicTransport('Автомобиль', 500, 2040, 'Фиолетовый', 300)
 # first_bus = Bus('ЛиАЗ', 210, 2015, 'Зеленый', 100, 70, 1232, 32)
